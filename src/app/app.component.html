@@ -95,6 +95,22 @@
     margin-top: 16px;
   }
 
+  .card-large {
+    border-radius: 4px;
+    border: 1px solid #eee;
+    background-color: #fafafa;
+    height: 120px;
+    width: 400px;
+    margin: 0 8px 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    line-height: 24px;
+  }
+
   .card {
     border-radius: 4px;
     border: 1px solid #eee;
@@ -395,7 +411,10 @@
   <!-- Terminal -->
   <div class="terminal" [ngSwitch]="selection.value">
       <pre *ngSwitchDefault>
-        <a class="card" target="_blank" rel="noopener" href="https://docs.qq.com/form/page/DYnlvUGNjY2NKcGlY">案例1：穿越回“日升昌”</a>
+        <a class="card-large" target="_blank" rel="noopener" href="https://docs.qq.com/form/page/DYnlvUGNjY2NKcGlY">
+          案例1：穿越回“日升昌”
+          <img height="90" src="../assets/rishengchang.jpeg" />
+        </a>
       </pre>
       <pre *ngSwitchCase="'material'">
         <a class="card" rel="noopener" href="#">案例2：待发布</a>
