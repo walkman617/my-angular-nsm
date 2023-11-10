@@ -26,6 +26,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('网络安全与管理');
+    expect(compiled.querySelector('.content span').textContent).toContain('企业网络安全与管理');
   });
 });
